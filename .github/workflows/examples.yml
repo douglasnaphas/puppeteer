@@ -13,4 +13,5 @@ jobs:
       - name: "Run the example"
         run: |
           npm install
+          npm run build
           NODE_PATH=../ node examples/search.js
