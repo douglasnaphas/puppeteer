@@ -13,5 +13,5 @@ jobs:
       - name: "Run the example"
         run: |
           PUPPETEER_CACHE_DIR=$(pwd) npm install
-          npm run build
+          PUPPETEER_CACHE_DIR=$(pwd) npm run build
           PUPPETEER_CACHE_DIR=$(pwd) NODE_PATH=../ node examples/search.js
